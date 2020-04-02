@@ -134,6 +134,27 @@
       </item>
       
       <item>
+        <title>Factorial</title>
+        <link>https://changfull.github.io/docs/algorithm/factorial/</link>
+        <pubDate>Tue, 28 Jan 2020 00:39:09 +0900</pubDate>
+        
+        <guid>https://changfull.github.io/docs/algorithm/factorial/</guid>
+        <description>Factorial 팩토리얼이란? 1부터 n까지의 자연수를 모두 곱하는 것
+#include &amp;lt;cstdio&amp;gt;int Factorial(int value){int result = 1;for (int i = 1; i &amp;lt;= value; ++i){result *= i;}return result;}int FactorialRecursive(int value){if (value &amp;lt;= 1){return 1;}return value* Factorial(value - 1);}int main(){printf(&amp;quot;result: %d\n&amp;quot;, Factorial(3));}</description>
+      </item>
+      
+      <item>
+        <title>FibonacciSequence</title>
+        <link>https://changfull.github.io/docs/algorithm/fibonaccisequence/</link>
+        <pubDate>Tue, 28 Jan 2020 00:39:09 +0900</pubDate>
+        
+        <guid>https://changfull.github.io/docs/algorithm/fibonaccisequence/</guid>
+        <description>FibonacciSequence 피보나치 수열 앞에 두수를 더해 현재 수를 만들어가는 수열
+[n-2] + [n-1] = [n]
+#include &amp;lt;cstdio&amp;gt;int FibonacciRecursive(int value){if (1 == value)return 0;if (2 == value)return 1;return FibonacciRecursive(value - 2) + FibonacciRecursive(value - 1);}int main(){for (int i = 1; i &amp;lt; 10; ++i){printf(&amp;quot;%d &amp;quot;, FibonacciRecursive(i));}}</description>
+      </item>
+      
+      <item>
         <title>ttttest</title>
         <link>https://changfull.github.io/docs/depth1/ttttest/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>

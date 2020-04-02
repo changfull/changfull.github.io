@@ -968,7 +968,7 @@
 <link rel="stylesheet" href="/css/main.min.css">
 
 
-    <meta name="description" content="test post" />
+    <meta name="description" content="" />
 <meta name="keywords" content="">
 <meta name="created" content="2020-01-28T00:39:09&#43;0900">
 <meta name="modified" content="2020-01-28T00:39:09&#43;0900">
@@ -1010,7 +1010,7 @@
     "datePublished": "2020-01-28T00:39:09+09:00",
     "dateModified": "2020-01-28T00:39:09+09:00",
     "url" : "https://changfull.github.io/docs/algorithm/binarysearch/",
-    "description": "test post",
+    "description": "binary search 이진탐색 이란? 정렬 되어있는 배열에서 중간 값을 선택하여, 그 값과 찾고자 하는 값의 크고 작음을 비교후 크면 중간 값을 최소값으로, 작으면 중간 값을 최대값으로 하여 다시 중간 값 선택을 반복한다. #include \u0026lt;cstdio\u0026gt;\rint …",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://changfull.github.io/"
@@ -2326,9 +2326,8 @@
     <h1 id="binary-search">binary search</h1>
 <h3 id="이진탐색-이란">이진탐색 이란?</h3>
 <p>정렬 되어있는 배열에서 중간 값을 선택하여, 그 값과 찾고자 하는 값의 크고 작음을 비교후<br />
-크면 중간 값을 최소값으로, 작으면 중간 값을 최대값으로 하여 다시 중간 값을 선택함을 반복한다.</p>
-<pre><code>
-#include &lt;cstdio&gt;
+크면 중간 값을 최소값으로, 작으면 중간 값을 최대값으로 하여 다시 중간 값 선택을 반복한다.</p>
+<pre><code>#include &lt;cstdio&gt;
 
 int BinarySearch(int data[], int cnt, int value)
 {
@@ -2357,6 +2356,27 @@ int BinarySearch(int data[], int cnt, int value)
 	return -1;
 }
 
+int BinarySearchRecursive(int data[], int low, int high, int value)
+{
+	if (high &lt; low)
+		return -1;
+
+	int mid = (low + high) &gt;&gt; 1;
+
+	if (value &lt; data[mid])
+	{
+		return BinarySearchRecursive(data, low, mid - 1, value);
+	}
+	else if (data[mid] &lt; value)
+	{
+		return BinarySearchRecursive(data, mid + 1, high, value);
+	}
+	else
+	{
+		return mid;
+	}
+}
+
 void main()
 {
 	int array[5] = { 1, 2, 3, 4, 5 };
@@ -2364,8 +2384,11 @@ void main()
 	int index = BinarySearch(array, sizeof(array) / sizeof(array[0]), 2);
 
 	printf(&quot;%d\n&quot;, index);
-}
 
+	index = BinarySearchRecursive(array, 0, (sizeof(array) / sizeof(array[0])) - 1, 2);
+	
+	printf(&quot;%d\n&quot;, index);
+}
 
 </code></pre>
   </article>

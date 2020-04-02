@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Algorithm on ZDoc</title>
+    <link>https://changfull.github.io/docs/algorithm/</link>
+    <description>Recent content in Algorithm on ZDoc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 28 Feb 2020 10:08:56 +0900</lastBuildDate>
+    
+        <atom:link href="https://changfull.github.io/docs/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>BinarySearch</title>
+        <link>https://changfull.github.io/docs/algorithm/binarysearch/</link>
+        <pubDate>Tue, 28 Jan 2020 00:39:09 +0900</pubDate>
+        
+        <guid>https://changfull.github.io/docs/algorithm/binarysearch/</guid>
+        <description>binary search 이진탐색 이란? 정렬 되어있는 배열에서 중간 값을 선택하여, 그 값과 찾고자 하는 값의 크고 작음을 비교후
+크면 중간 값을 최소값으로, 작으면 중간 값을 최대값으로 하여 다시 중간 값을 선택함을 반복한다.
+#include &amp;lt;cstdio&amp;gt;int BinarySearch(int data[], int cnt, int value){int low = 0;int mid = 0;int high = cnt - 1;while (low &amp;lt;= high){mid = (low + high) &amp;gt;&amp;gt; 1;if (value &amp;lt; data[mid]){high = mid - 1;}else if (data[mid] &amp;lt; value){low = mid + 1;}else{return data[mid];}}return -1;}void main(){int array[5] = { 1, 2, 3, 4, 5 };int index = BinarySearch(array, sizeof(array) / sizeof(array[0]), 2);printf(&amp;quot;%d\n&amp;quot;, index);}</description>
+      </item>
+      
+    
+  </channel>
+</rss>

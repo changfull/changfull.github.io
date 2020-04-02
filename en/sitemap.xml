@@ -138,6 +138,11 @@
   </url>
   
   <url>
+    <loc>https://changfull.github.io/docs/algorithm/</loc>
+    <lastmod>2020-02-28T10:08:56+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://changfull.github.io/docs/depth1/</loc>
     <lastmod>2020-02-28T10:08:56+09:00</lastmod>
   </url>
@@ -165,6 +170,11 @@
   <url>
     <loc>https://changfull.github.io/docs/depth1/depth2/depth3/test3/</loc>
     <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://changfull.github.io/docs/algorithm/binarysearch/</loc>
+    <lastmod>2020-01-28T00:39:09+09:00</lastmod>
   </url>
   
   <url>
@@ -215,6 +225,11 @@
                 hreflang="en"
                 href="https://changfull.github.io/docs/relatedcontent/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://changfull.github.io/docs/test/</loc>
+    <lastmod>2020-01-28T00:39:09+09:00</lastmod>
   </url>
   
   <url>
@@ -560,10 +575,6 @@
                 hreflang="en"
                 href="https://changfull.github.io/blog/emoji-support/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://changfull.github.io/docs/algorithm/binarysearch/</loc>
   </url>
   
 </urlset>

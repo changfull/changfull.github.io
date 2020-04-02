@@ -2,88 +2,99 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docs on ZDoc</title>
-    <link>http://example.org/docs/</link>
+    <link>https://changfull.github.io/docs/</link>
     <description>Recent content in Docs on ZDoc</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sat, 11 Jan 2020 14:09:21 +0900</lastBuildDate>
     
-        <atom:link href="http://example.org/docs/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://changfull.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Depth 1</title>
-        <link>http://example.org/docs/depth1/</link>
+        <link>https://changfull.github.io/docs/depth1/</link>
         <pubDate>Fri, 28 Feb 2020 10:08:56 +0900</pubDate>
         
-        <guid>http://example.org/docs/depth1/</guid>
+        <guid>https://changfull.github.io/docs/depth1/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Getting Started</title>
-        <link>http://example.org/docs/gettingstarted/</link>
+        <link>https://changfull.github.io/docs/gettingstarted/</link>
         <pubDate>Tue, 28 Jan 2020 00:34:39 +0900</pubDate>
         
-        <guid>http://example.org/docs/gettingstarted/</guid>
+        <guid>https://changfull.github.io/docs/gettingstarted/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Content Management</title>
-        <link>http://example.org/docs/contentmanagement/</link>
+        <link>https://changfull.github.io/docs/contentmanagement/</link>
         <pubDate>Tue, 28 Jan 2020 00:36:39 +0900</pubDate>
         
-        <guid>http://example.org/docs/contentmanagement/</guid>
+        <guid>https://changfull.github.io/docs/contentmanagement/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Related content</title>
-        <link>http://example.org/docs/relatedcontent/</link>
+        <link>https://changfull.github.io/docs/relatedcontent/</link>
         <pubDate>Tue, 28 Jan 2020 00:39:09 +0900</pubDate>
         
-        <guid>http://example.org/docs/relatedcontent/</guid>
+        <guid>https://changfull.github.io/docs/relatedcontent/</guid>
         <description>Markdown here</description>
       </item>
       
       <item>
         <title>Page Resources</title>
-        <link>http://example.org/docs/pageresources/</link>
+        <link>https://changfull.github.io/docs/pageresources/</link>
         <pubDate>Tue, 28 Jan 2020 00:39:06 +0900</pubDate>
         
-        <guid>http://example.org/docs/pageresources/</guid>
+        <guid>https://changfull.github.io/docs/pageresources/</guid>
         <description>Markdown here</description>
       </item>
       
       <item>
         <title>Page Bundles</title>
-        <link>http://example.org/docs/pagebundles/</link>
+        <link>https://changfull.github.io/docs/pagebundles/</link>
         <pubDate>Tue, 28 Jan 2020 00:38:59 +0900</pubDate>
         
-        <guid>http://example.org/docs/pagebundles/</guid>
+        <guid>https://changfull.github.io/docs/pagebundles/</guid>
         <description>Markdown here</description>
       </item>
       
       <item>
         <title>Content Formats</title>
-        <link>http://example.org/docs/contentfortmats/</link>
+        <link>https://changfull.github.io/docs/contentfortmats/</link>
         <pubDate>Tue, 28 Jan 2020 00:38:51 +0900</pubDate>
         
-        <guid>http://example.org/docs/contentfortmats/</guid>
+        <guid>https://changfull.github.io/docs/contentfortmats/</guid>
         <description>Markdown here</description>
       </item>
       
       <item>
         <title>Image Processing</title>
-        <link>http://example.org/docs/imageprocessing/</link>
+        <link>https://changfull.github.io/docs/imageprocessing/</link>
         <pubDate>Tue, 28 Jan 2020 00:38:48 +0900</pubDate>
         
-        <guid>http://example.org/docs/imageprocessing/</guid>
+        <guid>https://changfull.github.io/docs/imageprocessing/</guid>
         <description>Markdown here</description>
+      </item>
+      
+      <item>
+        <title></title>
+        <link>https://changfull.github.io/docs/algorithm/binarysearch/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://changfull.github.io/docs/algorithm/binarysearch/</guid>
+        <description>binary search 이진탐색 이란? 정렬 되어있는 배열에서 중간 값을 선택하여, 그 값과 찾고자 하는 값의 크고 작음을 비교후
+크면 중간 값을 최소값으로, 작으면 중간 값을 최대값으로 하여 다시 중간 값을 선택함을 반복한다.
+#include &amp;lt;cstdio&amp;gt;int BinarySearch(int data[], int cnt, int value){int low = 0;int mid = 0;int high = cnt - 1;while (low &amp;lt;= high){mid = (low + high) &amp;gt;&amp;gt; 1;if (value &amp;lt; data[mid]){high = mid - 1;}else if (data[mid] &amp;lt; value){low = mid + 1;}else{return data[mid];}}return -1;}void main(){int array[5] = { 1, 2, 3, 4, 5 };int index = BinarySearch(array, sizeof(array) / sizeof(array[0]), 2);printf(&amp;quot;%d\n&amp;quot;, index);}</description>
       </item>
       
     
